@@ -1,6 +1,8 @@
 .App {
 }
 
+/* FONTS */
+
 @font-face {
   font-family: "apophenia";
   src: url("fonts/Apophenia_LogoVariable.ttf") format("truetype");
@@ -10,6 +12,43 @@
   font-family: Programme-Primitiv;
   src: url("fonts/Programme-Primitiv.otf") format("opentype");
 }
+
+a {
+  font-family: Programme-Primitiv, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 70px;
+}
+
+p {
+  font-family: apophenia, sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 200px;
+}
+
+
+/* ANIMATION */
+
+@keyframes expand {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes logotransition {
+  0% {
+    font-variation-settings: "font-weight" 400;
+  }
+  100% {
+    font-variation-settings: "font-weight" 900;
+  }
+}
+
+
 
 .vimeo-wrapper {
   display: flex;
@@ -69,30 +108,6 @@ html {
   transition: height 0.5s ease;
 }
 
-@keyframes expand {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-@keyframes logotransition {
-  0% {
-    font-variation-settings: "font-weight" 400;
-  }
-  100% {
-    font-variation-settings: "font-weight" 900;
-  }
-}
-
-a {
-  font-family: Programme-Primitiv, sans-serif;
-  color: white;
-  text-align: center;
-  font-size: 70px;
-}
 
 .logo {
   width: 50px;
@@ -116,23 +131,22 @@ a {
 }
 
 .variable-logo {
-    position: fixed;
-    top: -214px;
-    left: 20px;
-    z-index: 10000;
-    font-family: 'apophenia';
-    font-size: 200px;
-    line-height: 0px;
-    font-variation-settings: 'wght' 900;
-    transition: font-variation-settings 500ms ease-in-out;
-    cursor: pointer;
+  position: fixed;
+  top: -214px;
+  left: 20px;
+  z-index: 10000;
+  font-family: "apophenia";
+  font-size: 700px;
+  line-height: 0px;
+  font-variation-settings: "wght" 900;
+  transition: font-variation-settings 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .variable-logo:hover {
-    font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
 }
 
 .s-overlay-toggled .c-logo {
-    font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
 }
-

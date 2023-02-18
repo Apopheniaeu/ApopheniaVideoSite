@@ -5,9 +5,7 @@ import Logo from "./images/Apophenia_LogoA_White.png";
 export default function App() {
   return (
     <>
-      <p onClick={this.handleLogoClick} className="variable-logo">
-        A
-      </p>
+      <p className="variable-logo">A</p>
 
       <div class="vimeo-wrapper">
         <iframe
