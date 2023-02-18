@@ -1,6 +1,16 @@
 .App {
 }
 
+@font-face {
+  font-family: "apophenia";
+  src: url("fonts/Apophenia_LogoVariable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Programme-Primitiv;
+  src: url("fonts/Programme-Primitiv.otf") format("opentype");
+}
+
 .vimeo-wrapper {
   display: flex;
   justify-content: center;
@@ -68,16 +78,13 @@ html {
   }
 }
 
-@font-face {
-  font-family: Apophenia-LogoVariable;
-  src: url(fonts/Apophenia_LogoVariable.ttf);
-  font-display: block;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: Programme-Primitiv;
-  src: url("fonts/Programme-Primitiv.otf") format("opentype");
+@keyframes logotransition {
+  0% {
+    font-variation-settings: "font-weight" 400;
+  }
+  100% {
+    font-variation-settings: "font-weight" 900;
+  }
 }
 
 a {
@@ -107,3 +114,25 @@ a {
     transform: translateX(-50%);
   }
 }
+
+.variable-logo {
+    position: fixed;
+    top: -214px;
+    left: 20px;
+    z-index: 10000;
+    font-family: 'apophenia';
+    font-size: 200px;
+    line-height: 0px;
+    font-variation-settings: 'wght' 900;
+    transition: font-variation-settings 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.variable-logo:hover {
+    font-variation-settings: 'wght' 400;
+}
+
+.s-overlay-toggled .c-logo {
+    font-variation-settings: 'wght' 400;
+}
+
