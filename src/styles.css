@@ -36,12 +36,12 @@ p {
   }
 }
 
-@keyframes logotransition {
+@keyframes logo-transition {
   0% {
-    font-variation-settings: "font-weight" 400;
+    font-variation-settings: "wght" 900;
   }
   100% {
-    font-variation-settings: "font-weight" 900;
+    font-variation-settings: "wght" 400;
   }
 }
 
@@ -148,9 +148,9 @@ html {
     font-family: "apophenia";
     font-size: 300px;
     line-height: 0px;
-    font-variation-settings: "wght" 400;
-    transition: logotransition 500ms ease-in;
+    animation: logo-transition 2s;
     cursor: pointer;
+    animation-play-state: paused;
   }
 }
 
