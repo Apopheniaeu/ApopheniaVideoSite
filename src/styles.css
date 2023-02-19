@@ -138,6 +138,22 @@ html {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  .variable-logo {
+    position: absolute;
+    top: -50%;
+    text-align: center;
+    z-index: 10000;
+    mix-blend-mode: overlay;
+    font-family: "apophenia";
+    font-size: 300px;
+    line-height: 0px;
+    font-variation-settings: "wght" 400;
+    transition: logotransition 500ms ease-in;
+    cursor: pointer;
+  }
+}
+
 .variable-logo:hover {
   font-variation-settings: "wght" 400;
 }
