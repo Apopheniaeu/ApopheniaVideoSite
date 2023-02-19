@@ -3,6 +3,16 @@ import "./styles.css";
 import Logo from "./images/Apophenia_LogoA_White.png";
 
 export default function App() {
+  useEffect(() => {
+    const iframe = document.getElementById("my-video");
+    const player = new window.Vimeo.Player(iframe);
+
+    player.on("play", () => {
+      const variableLogo = document.querySelector(".variable-logo");
+      variableLogo.style.animationPlayState = "running";
+    });
+  }, []);
+
   return (
     <>
       <div class="vimeo-wrapper">
