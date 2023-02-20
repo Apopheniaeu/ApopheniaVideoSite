@@ -27,21 +27,22 @@ p {
 
 /* ANIMATION */
 
-@keyframes expand {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
 @keyframes logo-transition {
   0% {
     font-variation-settings: "wght" 900;
+    opacity: 1;
+  }
+  55% {
+    font-variation-settings: "wght" 900;
+  }
+  65% {
+    font-variation-settings: "wght" 400;
+  }
+  95% {
+    opacity: 1;
   }
   100% {
-    font-variation-settings: "wght" 400;
+    opacity: 0;
   }
 }
 
@@ -84,25 +85,6 @@ html {
   transform: translate(-50%, -50%);
 }
 
-.video-progress-bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background-color: white;
-}
-
-.video-progress-bar-fill {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: progress;
-  width: 4px;
-  background-color: #007aff;
-  transition: height 0.5s ease;
-}
-
 .logo {
   width: 50px;
   padding-top: 10px;
@@ -126,38 +108,28 @@ html {
 
 .variable-logo {
   position: absolute;
-  top: -88%;
-  left: 14%;
+  top: -73%;
+  left: 24%;
   z-index: 10000;
   mix-blend-mode: overlay;
   font-family: "apophenia";
-  font-size: 400px;
+  font-size: 900px;
   line-height: 0px;
-  font-variation-settings: "wght" 400;
-  transition: logotransition 500ms ease-in;
+  animation: logo-transition 12s forwards;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
   .variable-logo {
     position: absolute;
-    top: -50%;
-    text-align: center;
+    top: -19vh;
+    left: 5vw;
     z-index: 10000;
     mix-blend-mode: overlay;
     font-family: "apophenia";
-    font-size: 300px;
+    font-size: 400px;
     line-height: 0px;
-    animation: logo-transition 2s;
+    animation: logo-transition 12s forwards;
     cursor: pointer;
-    animation-play-state: paused;
   }
-}
-
-.variable-logo:hover {
-  font-variation-settings: "wght" 400;
-}
-
-.s-overlay-toggled .c-logo {
-  font-variation-settings: "wght" 400;
 }
