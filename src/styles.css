@@ -32,10 +32,10 @@ p {
     font-variation-settings: "wght" 900;
     opacity: 1;
   }
-  55% {
+  45% {
     font-variation-settings: "wght" 900;
   }
-  65% {
+  52% {
     font-variation-settings: "wght" 400;
   }
   95% {
@@ -115,7 +115,7 @@ html {
   font-family: "apophenia";
   font-size: 900px;
   line-height: 0px;
-  animation: logo-transition 12s forwards;
+  animation: logo-transition 15s forwards;
   cursor: pointer;
 }
 
@@ -129,7 +129,7 @@ html {
     font-family: "apophenia";
     font-size: 400px;
     line-height: 0px;
-    animation: logo-transition 12s forwards;
+    animation: logo-transition 15s forwards;
     cursor: pointer;
   }
 }
