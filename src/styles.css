@@ -35,13 +35,21 @@ p {
   45% {
     font-variation-settings: "wght" 900;
   }
-  52% {
+  51% {
     font-variation-settings: "wght" 400;
   }
+  84% {
+    font-variation-settings: "wght" 400;
+  }
+  90% {
+    font-variation-settings: "wght" 900;
+  }
   95% {
+    font-variation-settings: "wght" 900;
     opacity: 1;
   }
   100% {
+    font-variation-settings: "wght" 900;
     opacity: 0;
   }
 }
@@ -108,28 +116,30 @@ html {
 
 .variable-logo {
   position: absolute;
-  top: -73%;
-  left: 24%;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10000;
   mix-blend-mode: overlay;
   font-family: "apophenia";
   font-size: 900px;
   line-height: 0px;
-  animation: logo-transition 15s forwards;
+  animation: logo-transition 18s forwards;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
   .variable-logo {
     position: absolute;
-    top: -19vh;
-    left: 5vw;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10000;
     mix-blend-mode: overlay;
     font-family: "apophenia";
     font-size: 400px;
     line-height: 0px;
-    animation: logo-transition 15s forwards;
+    animation: logo-transition 18s forwards;
     cursor: pointer;
   }
 }
