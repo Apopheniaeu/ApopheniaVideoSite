@@ -23,6 +23,7 @@ a {
 p {
   font-family: apophenia, sans-serif;
   color: white;
+  cursor: default;
 }
 
 /* ANIMATION */
@@ -100,6 +101,7 @@ html {
   mix-blend-mode: overlay;
   position: absolute;
   right: 10px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -111,6 +113,7 @@ html {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
   }
 }
 
@@ -125,7 +128,6 @@ html {
   font-size: 900px;
   line-height: 0px;
   animation: logo-transition 18s forwards;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -140,6 +142,5 @@ html {
     font-size: 400px;
     line-height: 0px;
     animation: logo-transition 18s forwards;
-    cursor: pointer;
   }
 }
