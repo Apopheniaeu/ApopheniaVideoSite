@@ -95,12 +95,12 @@ html {
 }
 
 .logo {
-  width: 50px;
+  width: 55px;
   padding-top: 10px;
   display: block;
   mix-blend-mode: overlay;
   position: absolute;
-  right: 10px;
+  left: 10px;
   cursor: pointer;
 }
 
@@ -119,14 +119,13 @@ html {
 
 .variable-logo {
   position: absolute;
-  top: 15%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -61%);
   z-index: 10000;
   mix-blend-mode: overlay;
   font-family: "apophenia";
-  font-size: 1000px;
-  line-height: 0px;
+  font-size: 1200px;
   animation: logo-transition 18s forwards;
 }
 
